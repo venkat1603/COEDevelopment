@@ -1,0 +1,12 @@
+.mat-toolbar{
+  width:100%;
+  position: relative;
+}
+.mat-toolbar.mat-primary {
+  background: #0033a1;
+  color: #ffffff;
+}
+.mat-toolbar a{
+  color: white;
+  text-decoration: none;
+}

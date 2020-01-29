@@ -1,0 +1,24 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <button mat-icon-button (click)="sidenav.toggle()">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <a [routerLink]="''">Home</a>
+  </mat-toolbar-row>
+</mat-toolbar>
+<mat-sidenav-container>
+  <mat-sidenav #sidenav>
+    <mat-nav-list>
+      <a mat-list-item [routerLink]="'/view-member'" (click)="sidenav.toggle()"> View COE Members </a>
+      <a mat-list-item [routerLink]="'/add-member'" (click)="sidenav.toggle()"> Create Member </a>
+      <a mat-list-item [routerLink]="'/create-account'"> Modify Member </a>
+      <a mat-list-item [routerLink]="'/create-account'" (click)="sidenav.toggle()"> Delete Member </a>
+      <a mat-list-item (click)="sidenav.toggle()" href="" mat-list-item>Close</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div style= "height: 745px; background-color: #ffffff;">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

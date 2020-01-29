@@ -1,0 +1,28 @@
+.add-member-header{
+  position:relative;
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  padding-top: 20px;
+}
+.add-member-form{
+  position:relative;
+  margin: auto;
+  text-align: center;
+  padding-top: 20px;
+}
+.submit-button{
+  text-align: right;
+  padding-right: 100px;
+}
+div{
+  position:relative;
+}
+label{
+  margin-top: 20px;
+  margin-right: 30px;
+  margin-left: 50px;
+}
+button{
+  margin: 10px;
+}

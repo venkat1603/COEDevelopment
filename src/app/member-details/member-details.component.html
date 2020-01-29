@@ -1,0 +1,10 @@
+<div *ngIf="isDataAvailable">
+<h1> Contact # {{contact_details.id}}</h1>
+<p>
+  Name: {{contact_details.name}}
+</p>
+<p>
+ Email: {{contact_details.email}}
+</p>
+<button name="Back" type="submit" [routerLink]="['/view-member']">Back</button>
+</div>
